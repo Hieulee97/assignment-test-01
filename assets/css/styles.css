@@ -1,0 +1,157 @@
+/* đặt biến CSS */
+:root {
+  --color-heading-2: #0e2452;
+  --color-black: #000;
+  --color-gray-white: #e9e9e9;
+  --font: arial, sans-serif, tahoma;
+}
+/* Reset một số thành phần HTML */
+html {
+  font-size: 62.5%;
+  line-height: 1.5rem;
+  font-family: var(--font);
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+h3,
+ul,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/* CSS cho 1 thành phần nhất định */
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+
+  padding: 40px;
+}
+.section#info {
+  width: 100%;
+}
+.section-imge {
+  padding: 5px;
+}
+
+/* Các class css-helper */
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-abs-tr {
+  top: 0;
+  right: 0;
+}
+
+.color-heading {
+  color: var(--color-heading-2);
+}
+
+.border-underline-black {
+  border-bottom: 1px solid var(--color-black);
+}
+
+.border-underline-gray {
+  border-bottom: 1px solid var(--color-gray-white);
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.text-context {
+  color: var(--color-black);
+  line-height: 1.5;
+  font-size: 16px;
+}
+.ptb-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.ptb-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.minwidth-3 {
+  min-width: calc(3 * (100% / 12));
+}
+
+.maxwidth-9 {
+  max-width: calc(9 * (100% / 12));
+}
+
+.pos-top {
+  vertical-align: top;
+}
+
+ul.list-dashed {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  word-wrap: break-word;
+}
+
+ul.list-dashed > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul.list-disc {
+  list-style-type: disc;
+}
